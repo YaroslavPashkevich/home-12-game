@@ -13,6 +13,7 @@
 		C453BEE326DB775A0045F5AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C453BEE126DB775A0045F5AB /* Main.storyboard */; };
 		C453BEE526DB775B0045F5AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C453BEE426DB775B0045F5AB /* Assets.xcassets */; };
 		C453BEE826DB775B0045F5AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C453BEE626DB775B0045F5AB /* LaunchScreen.storyboard */; };
+		C453BEF026DB800C0045F5AB /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C453BEEF26DB800C0045F5AB /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C453BEE426DB775B0045F5AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C453BEE726DB775B0045F5AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C453BEE926DB775B0045F5AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C453BEEF26DB800C0045F5AB /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				C453BEDB26DB775A0045F5AB /* AppDelegate.swift */,
 				C453BEDD26DB775A0045F5AB /* SceneDelegate.swift */,
 				C453BEDF26DB775A0045F5AB /* ViewController.swift */,
+				C453BEEF26DB800C0045F5AB /* SecondVC.swift */,
 				C453BEE126DB775A0045F5AB /* Main.storyboard */,
 				C453BEE426DB775B0045F5AB /* Assets.xcassets */,
 				C453BEE626DB775B0045F5AB /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				C453BEE026DB775A0045F5AB /* ViewController.swift in Sources */,
 				C453BEDC26DB775A0045F5AB /* AppDelegate.swift in Sources */,
+				C453BEF026DB800C0045F5AB /* SecondVC.swift in Sources */,
 				C453BEDE26DB775A0045F5AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
