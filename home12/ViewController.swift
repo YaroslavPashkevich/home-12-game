@@ -18,9 +18,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        GameoverLabel.text = gameOver
+        
+      
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
         GameoverLabel.text = gameOver
         
-        // Do any additional setup after loading the view.
+        
+        
     }
 
     @IBAction func startButton(_ sender: UIButton) {
@@ -33,4 +42,5 @@ class ViewController: UIViewController {
     }
     
 }
+
 

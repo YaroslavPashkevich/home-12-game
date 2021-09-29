@@ -34,7 +34,7 @@
                                     <constraint firstAttribute="height" constant="50" id="eZj-pT-w8b"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRe-VH-Nm5">
@@ -214,15 +214,19 @@
                             <constraint firstItem="qUN-3C-XQB" firstAttribute="bottom" secondItem="mtV-bk-k7a" secondAttribute="bottom" constant="120" id="g3i-VM-MgK"/>
                             <constraint firstItem="qUN-3C-XQB" firstAttribute="bottom" secondItem="wuL-6f-Hgw" secondAttribute="bottom" constant="120" id="kiB-kQ-Wa8"/>
                             <constraint firstItem="qUN-3C-XQB" firstAttribute="bottom" secondItem="7Qv-zx-hv6" secondAttribute="bottom" constant="20" id="rdZ-If-AD6"/>
+                            <constraint firstItem="qUN-3C-XQB" firstAttribute="bottom" secondItem="mXh-qP-KcN" secondAttribute="bottom" constant="748" id="tur-bB-JsV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8KT-wJ-QPw"/>
                     <connections>
+                        <outlet property="downDerevo" destination="tur-bB-JsV" id="tXo-S6-vyz"/>
                         <outlet property="imageAvto" destination="mtV-bk-k7a" id="XHZ-R7-qIK"/>
                         <outlet property="imageDerevo" destination="mXh-qP-KcN" id="X95-0S-WlY"/>
                         <outlet property="leftConstrent" destination="9Mo-z4-H7i" id="t9Z-yg-c56"/>
+                        <outlet property="leftDerevo" destination="9cH-4r-rwC" id="gSm-F2-KMD"/>
                         <outlet property="one" destination="wuL-6f-Hgw" id="9gh-wm-G0X"/>
                         <outlet property="rightConstrent" destination="Mrn-Uc-yCD" id="6fg-WY-PPZ"/>
+                        <outlet property="rightDerevo" destination="Oga-wd-4Nj" id="pAr-9f-dfV"/>
                         <outlet property="topDerevo" destination="dob-M5-25D" id="N8R-YI-Mn4"/>
                         <outlet property="two" destination="5yF-bT-QlZ" id="5W0-Q7-GRm"/>
                     </connections>

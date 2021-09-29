@@ -19,7 +19,11 @@ class SecondVC: UIViewController {
     
     @IBOutlet weak var topDerevo: NSLayoutConstraint!
     
+    @IBOutlet weak var downDerevo: NSLayoutConstraint!
     
+    @IBOutlet weak var leftDerevo: NSLayoutConstraint!
+    
+    @IBOutlet weak var rightDerevo: NSLayoutConstraint!
     
     @IBOutlet weak var imageAvto: UIImageView!
     
@@ -27,27 +31,34 @@ class SecondVC: UIViewController {
     
     var gameOver: String = ""
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        CarPosition.allCases
+        
+        print(CarPosition.center)
         
         
-        UIView.animate(withDuration: 5, delay: 1) {
-            self.imageDerevo.transform = CGAffineTransform(translationX: 0, y: 418)
-        } completion: { _ in
+        if downDerevo.constant == view.frame.maxY - 230 && leftConstrent.constant == 3 {
             
-            let vc = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ViewController") as! ViewController
-            
-            
-            
+        let vc = navigationController?.viewControllers.first as? ViewController
             self.gameOver = "Game Over"
-            
-            vc.gameOver = self.gameOver
+            vc?.gameOver = self.gameOver
             self.navigationController?.popViewController(animated: true)
+        } else {
+            UIView.animate(withDuration: 5, delay: 1, options: .repeat) {
+                self.imageDerevo.transform = CGAffineTransform(translationX: 0, y: self.view.frame.maxY - 320)
+            }
         }
-        
-        
-        
+    }
+    
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
     }
     
     
@@ -64,26 +75,37 @@ class SecondVC: UIViewController {
         }
     }
     
+    
+    
+    
     @IBAction func rightButton(_ sender: UIButton) {
         
         if rightConstrent.constant == 32 {
-            
             UIView.animate(withDuration: 2) {
                 self.rightConstrent.constant = -225
             }
-            
         } else
         
         if leftConstrent.constant == -225 {
-            
             UIView.animate(withDuration: 2) {
                 self.leftConstrent.constant = 32
-                
             }
         }
-        
-        
     }
     
 }
 
+enum CarPosition: CaseIterable {
+    case left, center, right
+    
+    var offset: CGFloat {
+        switch self {
+        case .left:
+            return 0
+        case .center:
+            return UIScreen.main.bounds.width / 2
+        case .right:
+            return UIScreen.main.bounds.width
+        }
+    }
+}
